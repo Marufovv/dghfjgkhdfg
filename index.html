@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#190019">
+  <meta name="description" content="Portfolio — veb dasturchi va ijodiy texnologiyalar.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfolio — [Ism Familiya]">
+  <meta property="og:description" content="Veb dasturchi portfolio sayti.">
+  <meta property="og:image" content="https://marufovv.github.io/porter/assets/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portfolio — [Ism Familiya]">
+  <meta name="twitter:description" content="Veb dasturchi portfolio sayti.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Portfolio — [Ism Familiya]</title>
+  <script>
+    (()=>{try{const t=localStorage.getItem('portfolio-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.dataset.theme=t}catch(_){document.documentElement.dataset.theme='dark'}})();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script type="application/ld+json" id="person-jsonld">{"@context":"https://schema.org","@type":"Person","name":"[Ism Familiya]","jobTitle":"[Kasb / yo‘nalish]","url":"https://marufovv.github.io/porter/"}</script>
+
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Asosiy kontentga o‘tish</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="preloader" id="preloader" aria-hidden="true"><span class="loader-mark">P</span></div>
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Portfolio home"><span class="brand-mark">P</span><span data-content="nameShort">[Ism]</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about" data-i18n="navAbout">Men haqimda</a><a href="#skills" data-i18n="navSkills">Ko‘nikmalar</a><a href="#projects" data-i18n="navProjects">Loyihalar</a><a href="#experience" data-i18n="navExperience">Tajriba</a><a href="#contact" data-i18n="navContact">Aloqa</a>
+      </div>
+      <div class="nav-tools">
+        <div class="languages" role="group" aria-label="Choose language"><button data-lang="uz" aria-label="O‘zbek tili">UZ</button><button data-lang="ru" aria-label="Русский язык">RU</button><button data-lang="en" aria-label="English">EN</button></div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme"><span class="theme-icon" aria-hidden="true">☼</span></button>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span><span data-i18n="heroEyebrow">Salom, men</span></p>
+          <h1 id="hero-title"><span data-content="name">[Ism Familiya]</span><span class="hero-period">.</span></h1>
+          <p class="hero-role"><span data-i18n="heroRolePrefix">Men</span> <span class="role-rotator" id="role-rotator">[Kasb / yo‘nalish]</span><span class="typing-caret">|</span></p>
+          <p class="hero-intro" data-i18n="heroIntro">Raqamli mahsulotlar yaratishga qiziqaman. Bu portfolio namunaviy kontent bilan to‘ldirilgan.</p>
+          <!-- TODO: Add your own assets/CV.pdf, then set profile.cv in js/i18n.js. --><div class="hero-actions"><a class="button button-primary magnetic" href="#projects"><span data-i18n="heroProjects">Loyihalarni ko‘rish</span><span aria-hidden="true">↗</span></a><a class="button button-quiet" href="assets/CV.pdf" download data-cv-link><span data-i18n="heroCv">CV yuklab olish</span><span aria-hidden="true">↓</span></a></div>
+          <div class="social-row" id="hero-socials"></div>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-orbit orbit-three"></div><div class="art-planet"></div><div class="art-satellite"></div><span class="art-caption">DESIGN / CODE / BUILD</span></div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-cue-line"></span><span data-i18n="scroll">Pastga aylantiring</span></a>
+      <span class="hero-index" aria-hidden="true">01 — 05</span>
+    </section>
+    <section class="section about-section container" id="about" aria-labelledby="about-title">
+      <div class="section-label"><span>01</span><span data-i18n="labelAbout">Men haqimda</span></div>
+      <div class="about-layout">
+        <div class="about-photo reveal"><img src="assets/avatar.svg" alt="Portfolio egasi uchun vaqtinchalik abstrakt avatar" id="avatar"><span class="photo-tag" data-i18n="avatarLabel">Shaxsiy surat bilan almashtiring</span></div>
+        <div class="about-copy reveal"><!-- TODO: Replace sample bio and stats in js/i18n.js with verified personal details. --><p class="eyebrow" data-i18n="aboutEyebrow">Bir oz o‘zim haqimda</p><h2 id="about-title" data-i18n="aboutTitle">Qiziqishdan<br><em>mahsulotgacha.</em></h2><p class="body-copy" data-i18n="aboutBody">Men foydali, sodda va puxta raqamli tajribalar yaratishga intilaman. Ushbu matn portfolio egasining haqiqiy tarjimai holi bilan almashtirilishi kerak.</p><p class="location"><span aria-hidden="true">⌖</span><span data-i18n="location">[Shahar, O‘zbekiston]</span></p><div class="stats" id="stats"></div></div>
+      </div>
+    </section>
+    <section class="section skills-section container" id="skills" aria-labelledby="skills-title">
+      <div class="section-label"><span>02</span><span data-i18n="labelSkills">Ko‘nikmalar</span></div><div class="section-heading-row"><h2 id="skills-title" data-i18n="skillsTitle">Asboblar<br><em>va usullar.</em></h2><p class="section-aside" data-i18n="skillsAside">Tехнологиялар бўйича намунали рўйхат. Ўзингизнинг ҳақиқий кўникмаларингизга алмаштиринг.</p></div><div class="skill-groups" id="skill-groups"></div>
+    </section>
+    <section class="section projects-section container" id="projects" aria-labelledby="projects-title">
+      <div class="section-label"><span>03</span><span data-i18n="labelProjects">Tanlangan ishlar</span></div><div class="section-heading-row"><h2 id="projects-title" data-i18n="projectsTitle">Ishlar<br><em>so‘zlasin.</em></h2><p class="section-aside" data-i18n="projectsAside">Loyihalar quyida namuna sifatida keltirilgan. Haqiqiy ishlaringiz va havolalaringiz bilan almashtiring.</p></div>
+      <div class="filter-row" id="project-filters" role="group" aria-label="Filter projects"></div><div class="project-grid" id="project-grid"></div>
+    </section>
+    <section class="section experience-section container" id="experience" aria-labelledby="experience-title">
+      <div class="section-label"><span>04</span><span data-i18n="labelExperience">Tajriba va ta’lim</span></div><div class="section-heading-row"><h2 id="experience-title" data-i18n="experienceTitle">O‘rganish.<br><em>Yaratish.</em></h2><p class="section-aside" data-i18n="experienceAside">Hozирча намунавий маълумот. Тасдиқланмаган ютуқлар ҳақиқий факт сифатида кўрсатилмайди.</p></div><div class="timeline" id="timeline"></div><div class="certificates" id="certificates"></div>
+    </section>
+    <section class="section contact-section container" id="contact" aria-labelledby="contact-title">
+      <div class="section-label"><span>05</span><span data-i18n="labelContact">Aloqa</span></div><div class="contact-panel"><div class="contact-copy"><p class="eyebrow" data-i18n="contactEyebrow">Keyingi loyihangiz bormi?</p><h2 id="contact-title" data-i18n="contactTitle">Keling,<br><em>gaplashamiz.</em></h2><p data-i18n="contactBody">Hamkorlik yoki loyiha haqida yozing. Quyidagi aloqa ma’lumotlarini o‘zingiznikiga almashtiring.</p><a class="contact-email" id="contact-email" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a><button class="copy-email" id="copy-email" data-i18n="copyEmail">Emailni nusxalash</button><div class="contact-socials" id="contact-socials"></div></div>
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/REPLACE_ME" method="POST" novalidate><p class="form-note" data-i18n="formSetup">Formani ishlatish uchun Formspree ID’sini js/i18n.js va index.html ichida sozlang.</p><label for="form-name" data-i18n="formName">Ismingiz</label><input id="form-name" name="name" autocomplete="name" required><label for="form-email" data-i18n="formEmail">Email manzilingiz</label><input id="form-email" name="email" type="email" autocomplete="email" required><label for="form-message" data-i18n="formMessage">Xabaringiz</label><textarea id="form-message" name="message" rows="4" required></textarea><button class="button button-primary form-submit" type="submit"><span data-i18n="formSend">Xabar yuborish</span><span aria-hidden="true">↗</span></button><p class="form-status" id="form-status" role="status" aria-live="polite"></p></form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer container"><a class="brand" href="#home"><span class="brand-mark">P</span><span data-content="nameShort">[Ism]</span></a><p>© <span id="year"></span> <span data-i18n="footerRights">Barcha huquqlar himoyalangan.</span></p><a class="back-top" href="#top"><span data-i18n="backTop">Yuqoriga</span> ↑</a></footer>
+  <button class="floating-top" id="floating-top" aria-label="Back to top">↑</button>
+  <dialog class="project-dialog" id="project-dialog"><button class="dialog-close" id="dialog-close" aria-label="Close">×</button><div id="dialog-content"></div></dialog>
+  </body>
+</html>
